@@ -1,0 +1,49 @@
+{
+  "name": "Multi-extension Sidebar (MES)",
+  "description": "Allows multiple other extensions to show conetnt in the sidebar.",
+  "version": "0.1",
+  "manifest_version": 3,
+  "icons": {
+    "32": "shared/icons/icon-16.png",
+    "48": "shared/icons/icon-48.png",
+    "64": "shared/icons/icon-64.png",
+    "128": "shared/icons/icon-128.png",
+    "256": "shared/icons/icon-256.png",
+    "512": "shared/icons/icon-512.png"
+  },
+  "sidebar_action": {
+    "default_icon": {
+      "16": "shared/icons/icon-16.png",
+      "32": "shared/icons/icon-32.png",
+      "48": "shared/icons/icon-48.png",
+      "64": "shared/icons/icon-64.png",
+      "128": "shared/icons/icon-128.png",
+      "256": "shared/icons/icon-256.png",
+      "512": "shared/icons/icon-512.png"
+    },
+    "default_title": "Multi-extension Sidebar",
+    "default_panel": "sidebar/sidebar.html",
+    "open_at_install": true
+  },
+  "side_panel": {
+    "default_path": "sidebar/sidebar.html"
+  },
+  "permissions": [
+    "sidePanel"
+  ],
+  "background": {
+    "page": "background.html",
+    "service_worker": "background.js",
+    "type": "module",
+    "preferred_environment": ["document", "service_worker"]
+  },
+  "externally_connectable": {
+    "id": ["*"],
+    "matches": []
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "mes@dotproto"
+    }
+  }
+}
