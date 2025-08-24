@@ -1,0 +1,13 @@
+{
+  "name": "multi-extension-sidebar",
+  "version": "1.0.0",
+  "description": "A browser sidebar extnsion that lets multiple other extensiosn to show their sidebar content simultaniously.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node scripts/build.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only"
+}
